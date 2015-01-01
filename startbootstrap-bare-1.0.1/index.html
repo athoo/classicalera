@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom js -->
+    <script>
+      $(function){
+
+      }
+    </script>
+
+    <!-- Custom CSS -->
+    <style>
+    html{
+      height:100%;
+    }
+
+    /*.wrapper{*/
+        /*background:url(static/2.png) 50px 0 no-repeat;*/
+    /*}*/
+    body {
+        /*height:100%;*/
+        background:url(static/1.png) 0 0 no-repeat;
+        /*background-image: url(static/1.png),url(static/2.png);*/
+        /*background-size: 50%,50%;*/
+        /*background-repeat:no-repeat;*/
+        /*padding-top: 70px;*/
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+
+    .navbar.navbar-inverse.navbar-fixed-top{
+      background-color: #FFFFFF;
+    }
+
+    a:hover{
+      color:#333 !important;
+    }
+
+
+    .wrapper {
+      min-height:100%;
+      margin: 0 auto -4em;
+    }
+
+    * {
+      margin:0;
+    }
+
+   div.scroll{
+    height:100px;
+    width:100px;
+    overflow:scroll;
+    display:inline-block;
+    }
+
+    .scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    ul.result{
+        width:30px;
+        list-style-type: none;
+        /* border: 4px solid #90bade; */
+    }
+
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
+    /*.nav.navbar-nav>li>a:hover{*/
+    /*  color: #333;*/
+
+    /*}*/
+
+    /*.nav-brand:hover{*/
+    /*  color:#333;*/
+    /*}*/
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body >
+
+  <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Classical Era</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>白話-文言 翻譯機</h1>
+
+                <p class="lead">Result will be showed above</p>
+
+                   <div class="scroll">
+                      <ul class="result">
+                          <li>first</li>
+                          <li> second</li>
+                          <li> third</li>
+                          <li> 4</li>
+                          <li> 5</li>
+                          <li> 6</li>
+                          <li> 7</li>
+                          <li> 8</li>
+                      </ul>
+                  </div>
+                  <div class="scroll">
+                      <ul class="result">
+                          <li>a</li>
+                          <li> b</li>
+                          <li> c</li>
+                          <li> d</li>
+                          <li> e</li>
+                          <li> f</li>
+                          <li> g</li>
+                          <li> h</li>
+                      </ul>
+                  </div>
+
+
+
+                <!--<ul class="list-unstyled">-->
+                <!--    <li>Bootstrap v3.3.1</li>-->
+                <!--    <li>jQuery v1.11.1</li>-->
+                <!--</ul>-->
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    <div class="query_space">
+      <div class="container text-center">
+        <h2>Here is the place for your query!</h2>
+        <div id="query">
+          <form role="form" action="" method="post" id="" name="" target="" novalidate>
+            <div class="input-group input-group-lg">
+              <input type="" name="" class="form-control" id="" placeholder="知之為知之">
+              <span class="input-group-btn">
+                <button type="submit" name="" id="" class="btn btn-default">Submit!</button>
+              </span>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+
+  <!--<div class="push"></div>-->
+
+  </div>
+
+    <div class="footer">
+      <!--<div class="container">-->
+        <!--<div class="row">-->
+          <div class="col-md-6">
+            <ul class="list-inline">
+              <li>resource</li>
+              <li>example</li>
+              <li>made by Tsing Hua</li>
+            </ul>
+          </div>
+        <!--</div>-->
+
+        <hr>
+        <!--<div class="row">-->
+          <p>this is the footer</p>
+        <!--</div>-->
+      <!--</div>-->
+
+    </div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
