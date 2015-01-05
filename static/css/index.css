@@ -133,7 +133,7 @@ body{
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("/img/bg_map.jpg");
+  background-image: url("/static/img/bg_map.jpg");
   /*-webkit-filter:blur(5px);*/
   background-repeat: repeat-y;
   background-position: 0px 0px;
@@ -157,19 +157,7 @@ h1{
   font-size:60px;
   color:rgba(49, 22, 71, 1);
 }
-/*#img-2{*/
-/*  left:37%;*/
-/*  top:10%;*/
-/*  width:20%;*/
 
-/*}*/
-
-/*#img-3{*/
-/*  left:11%;*/
-/*  top:59%;*/
-/*  width:10%;*/
-/*}*/
-/*.wrapper{*/
-/*  width:100%;*/
-/*  height:100;*/
-/*}*/
+.result{
+  margin-top:50px;
+}
