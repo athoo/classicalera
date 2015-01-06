@@ -4,6 +4,7 @@ from flaskext.markdown import Markdown
 #from outer_test import test2
 import urllib2
 import json
+from hanziconv import HanziConv
 
 app = Flask(__name__)
 Markdown(app)
@@ -17,7 +18,7 @@ def index():
 @app.route('/',methods=['POST'])
 def hello():
     name = request.form['checking']
-    temp_name = name
+    temp_name = HanziConv.toTraditional(name)
     name = name.encode('utf-8')
     name = urllib2.quote(name)
     url_tem= "http://csclab11.cs.nthu.edu.tw:5000/?q=%s"%name
