@@ -37,7 +37,7 @@ def hello():
     url_kang="http://kxgen.mqstudiotw.com/?%s"%kangxi
     kangxi_result = urllib2.urlopen(url_kang)
     #print kangxi_result
-    return render_template('index.html', name=temp_name,result=kangxi)
+    return render_template('index.html', name=temp_name,result=d["result"])
 
 @app.route('/about')
 def about():
