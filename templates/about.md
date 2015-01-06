@@ -116,7 +116,7 @@
 
 ## Data Preparation
 
-Parallel Corpus
+- Parallel Corpus
   - separate the raw data according to the punctuation
   - using python module Zhon
 - Word Segmentation

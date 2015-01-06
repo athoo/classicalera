@@ -31,8 +31,12 @@ def hello():
     # namelist.append(temp_name)
     # resultlist.append(d["result"])
     # result = get_result(name)
-
-    return render_template('index.html', name=temp_name,result=kangxi)
+    kangxi=kangxi.encode('utf-8')
+    kangxi=urllib2.quote(kangxi)
+    url_kang="http://kxgen.mqstudiotw.com/?%s"%kangxi
+    kangxi_result = urllib2.urlopen(url_kang)
+    #print kangxi_result
+    return render_template('index.html', name=temp_name,result=kangxi_result)
 
 @app.route('/about')
 def about():
