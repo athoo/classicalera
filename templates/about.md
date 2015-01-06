@@ -98,46 +98,41 @@
 5.api service
 6.web application
 
----
+
 ## raw material
 
 ![Imgur](http://i.imgur.com/6bIIfgw.png)
 
-- 古文觀止全文（除春秋時期作品）
+- 古文觀止全文（除春秋時期作品、四六文）
 
 - Parse the parallel corpus from the web.
     - crawl with beautifulsoup
----
-## parallel corpus
-
-- separate the raw data according to the punctuation
-- a double check with hand-coding
-
-## word segmentation
-
-- Jieba-a open source python library for Chinese segmentation
-- human-adding dictionary(human name etc.) for better segmentation
-
----
-
-## Moses
-
-- Training with the parallel corpus
 
 
+## Statistical Machine Translation - Moses
 
----
-
-## api and web application
-
-- python-Flask framed web service.
+![Imgur](http://i.imgur.com/jAKdX2b.png)
 
 
+## Data Preparation
 
-![Imgur](http://i.imgur.com/6bIIfgw.png)
+- Parallel Corpus
+  - separate the raw data according to the punctuation
+  - using python module Zhon
+- Word Segmentation
+  - Jieba - A open source python library for Chinese segmentation
+  - human- Adding dictionary(human name etc.) for better segmentation
+- Build Language Model with IRSLM
+- Build Translation Model with Moses
 
+## Backend Server
 
+- Moses provides a server interface, but is based on XMLRPC. (out of date)
 
+![Imgur](http://i.imgur.com/Q5ieanQ.png)
+
+- Write a little server wrapper with Flask to provide REST API.
+- A heroku hosted web application
 
 
 

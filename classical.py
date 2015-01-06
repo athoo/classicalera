@@ -26,12 +26,13 @@ def hello():
     #result = json.load(result)
     # print type(result)
     d = json.loads(result)
+    kangxi=HanziConv.toTraditional(d["result"])
     # print d["result"]
     # namelist.append(temp_name)
     # resultlist.append(d["result"])
     # result = get_result(name)
 
-    return render_template('index.html', name=temp_name,result=d["result"])
+    return render_template('index.html', name=temp_name,result=kangxi)
 
 @app.route('/about')
 def about():
