@@ -19,6 +19,7 @@ def index():
 def hello():
     name = request.form['checking']
     temp_name = HanziConv.toTraditional(name)
+    name = HanziConv.toSimplified(name)
     name = name.encode('utf-8')
     name = urllib2.quote(name)
     url_tem= "http://csclab11.cs.nthu.edu.tw:5000/?q=%s"%name
@@ -36,7 +37,7 @@ def hello():
     url_kang="http://kxgen.mqstudiotw.com/?%s"%kangxi
     kangxi_result = urllib2.urlopen(url_kang)
     #print kangxi_result
-    return render_template('index.html', name=temp_name,result=kangxi_result)
+    return render_template('index.html', name=temp_name,result=kangxi)
 
 @app.route('/about')
 def about():
