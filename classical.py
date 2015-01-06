@@ -29,7 +29,8 @@ def hello():
     namelist.append(temp_name)
     resultlist.append(d["result"])
     # result = get_result(name)
-    return render_template('index.html', name=temp_name,result=d["result"], namelist=namelist[1:], resultlist=result[1:])
+
+    return render_template('index.html', name=temp_name,result=d["result"])
 
 @app.route('/about')
 def about():
