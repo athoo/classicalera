@@ -7,8 +7,8 @@ import json
 
 app = Flask(__name__)
 Markdown(app)
-namelist=[]
-resultlist=[]
+# namelist=[]
+# resultlist=[]
 
 @app.route('/')
 def index():
@@ -23,11 +23,11 @@ def hello():
     url_tem= "http://csclab11.cs.nthu.edu.tw:5000/?q=%s"%name
     result = urllib2.urlopen(url_tem).read()
     #result = json.load(result)
-    print type(result)
+    # print type(result)
     d = json.loads(result)
-    print d["result"]
-    namelist.append(temp_name)
-    resultlist.append(d["result"])
+    # print d["result"]
+    # namelist.append(temp_name)
+    # resultlist.append(d["result"])
     # result = get_result(name)
 
     return render_template('index.html', name=temp_name,result=d["result"])
