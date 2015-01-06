@@ -8,3 +8,4 @@ setuptools==11.0
 Werkzeug==0.9.6
 jieba==0.35
 Flask-Markdown==0.3
+httplib2==0.9

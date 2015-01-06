@@ -122,16 +122,18 @@
         <div id="result" class="row">
             <div class="col-lg-12 text-center">
                 <div id="ongoing">
-                  <p>{{name}}</p>
-                  <p>{{result}}</p>
+                <p>原文：{{name}}</p>
+                  <p>译文：{{result}}</p>
                 </div>
-                <div id="history">
-                  {%- for item in namelist recursive %}
-
-                  {%- endfor %}}
-                   <p>原文:知就直到</p>
-                  <p>譯文: 我就是不知道阿</p>
-                </div>
+                <!--<div id="history">-->
+                <!--  {% for item in namelist recursive %}-->
+                <!--    {% if item.occurences %}-->
+                <!--      Item{{loop.index}}:{{item.occurences}}-->
+                <!--      {% endif %}-->
+                <!--  {% endfor %}}-->
+                  <!-- <p>原文:知就直到</p>-->
+                  <!--<p>譯文: 我就是不知道阿</p>-->
+                <!--</div>-->
             </div>
         </div>
         <!-- /.row -->
